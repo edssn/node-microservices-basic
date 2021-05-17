@@ -14,7 +14,7 @@ class App extends Component {
     }
 
     fetchPosts = async() => {
-        const res = await axios.get('http://localhost:4002/posts');
+        const res = await axios.get('http://posts.com/posts');
         this.setState({ posts: res.data });
     }
 
@@ -24,7 +24,7 @@ class App extends Component {
 
     render () {
         return <div className="container">
-            <h1>Create Post</h1>
+            <h1>Create Post!</h1>
             <PostCreate fetchPosts={this.fetchPosts}/>
             <hr />
             <h1>Posts</h1>

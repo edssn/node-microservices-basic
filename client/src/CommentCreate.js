@@ -14,7 +14,7 @@ class CommentCreate extends Component {
     onSubmit = async (e) => {
         e.preventDefault();
         let {postId} = this.props;
-        await axios.post(`http://localhost:4001/posts/${postId}/comments`, {
+        await axios.post(`http://posts.com/posts/${postId}/comments`, {
             content: this.state.content
         });
         this.setState({content: ''});

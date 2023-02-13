@@ -1,6 +1,11 @@
 # Microservicios Básicos. #
-Implementación de un Blog Básico con Publicaciones y Comentarios con fines educativos. 
-Cada directorio contiene la app correspondiente a un microservicio. 
+Implementación de un Blog Básico con Publicaciones y Comentarios con fines demostrativos 
+del funcionamiento de Deployments, Services y Pods de Kubernetes.
+
+Todos los datos producidos en la app se almacenan en memoria. Al reiniciar cada microservicio, sus datos se perderán 
+
+Cada directorio contiene la app correspondiente a un microservicio.
+
 La creación de comentarios tiene un proceso de validación. Los comentarios con la palabra 
 orange son rechazados.
 

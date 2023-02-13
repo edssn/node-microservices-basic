@@ -1,0 +1,72 @@
+DOCKER
+docker ps
+listar los contenedores activos
+
+docker image ls
+listar imagenes existentes
+
+docker build -t edssn/posts:0.0.1 .
+contruir una imagen basada en un dockerfile en el directorio actual
+
+docker run [image id or image tag]
+Crear e iniciar un contenedor basado en una imagen o tag
+
+docker run -it [image id or image tag] [cmd]
+Crear e iniciar un contenedor basado en una imagen o tag y 
+sobreescribir el comando por defecto
+
+docker exec -t [container id] [cmd]
+Ejecutar un comando en un contenedor
+
+docker logs [container id]
+Imprimir los logs de un contenedor
+
+
+
+
+
+
+KEBERNETS
+
+kubectl apply -f [config file name]
+crear un objeto de kubernets de un archivo de configuracion
+
+kubectl apply -f .
+crear un objeto de kubernets de cada archivo de configuracion
+que exista en el directorio
+
+listar pods
+kubectl get pods
+
+kubectl exec -it [pod name] [cmd]
+Ejecutar un comando en un pod
+
+kubectl logs [container id]
+Imprimir los logs de un pod
+
+kubectl describe pod [pod name]
+Ver detalles de un pod
+
+kubectl delete pod [pod name]
+Eliminar un pod
+
+kubectl get deployments
+listar deployments
+
+kubectl describe deployment [depl name]
+ver detalles de un deployment especifico
+
+kubectl delete deployment [depl name]
+eliminar un deployment
+
+kubectl get services
+Listar servicios
+
+kubectl describe service posts-srv
+Describir un servicio
+
+kubectl rollout restart deployment [depl name]
+Reiniciar un deployment
+
+docker push [image tag or image id]
+Subir una imagen DockerHub 

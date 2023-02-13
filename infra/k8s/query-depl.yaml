@@ -14,7 +14,7 @@ spec:
     spec:
       containers: 
         - name: query
-          image: edssn/query
+          image: edissonsigua/query
 ---
 apiVersion: v1
 kind: Service

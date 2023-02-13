@@ -14,7 +14,7 @@ spec:
     spec:
       containers: 
         - name: moderation
-          image: edssn/moderation
+          image: edissonsigua/moderation
 ---
 apiVersion: v1
 kind: Service

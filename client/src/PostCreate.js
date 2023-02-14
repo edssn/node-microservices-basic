@@ -13,6 +13,9 @@ class PostCreate extends Component {
     onSubmit = async (e) => {
         e.preventDefault();
 
+        if (this.state.title.length === 0)
+            return;        
+
         await axios.post('http://posts.com/posts/create', {
             title: this.state.title
         });

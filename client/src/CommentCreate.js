@@ -13,6 +13,10 @@ class CommentCreate extends Component {
 
     onSubmit = async (e) => {
         e.preventDefault();
+
+        if (this.state.content.length === 0)
+            return;
+
         let {postId} = this.props;
         await axios.post(`http://posts.com/posts/${postId}/comments`, {
             content: this.state.content

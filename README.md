@@ -15,12 +15,11 @@ orange son rechazados.
 | NodeJS  | React |
 
 ## Despliegue ##
-![Deploying image](assets/deploy.git "MarineGEO logo")
+![Deploying image](/assets/deploy.gif "MarineGEO logo")
 
 ## Funcionamiento ##
-![Working Image](/assets/img/MarineGEO_logo.png "MarineGEO logo")
+![Working Image](/assets/use.gif "MarineGEO logo")
 
-![The San Juan Mountains are beautiful!](/assets/images/san-juan-mountains.jpg "San Juan Mountains")
 
 ## Instalación ##
 1. Descarga o clona el proyecto
